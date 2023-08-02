@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Thailand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="showcase active">
+        <header>
+            <h2 class="logo"> Geaux Explore</h2>
+            <div class="toggle active"></div>
+        </header>
+        <video src="img/thailand.mp4" autoplay loop></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>The World is YOURS</h2>
+            <h3>Thailand</h3>
+            <p>What is it about Thailand that makes it a major tourist destination? It could be the world famous
+                mouth-watering cuisine, the exotic culture with its magnificent temples and palaces, the spectacular
+                scenery which includes the multitude of pristine white sand beaches and turquoise seas, majestic
+                mountains, fast flowing rivers wending their way through jungles or its long history and interesting
+                archaeological sites all to be found on Thailand tours. </p>
+            <a href="">Geaux Explore it</a>
+        </div>
+
+        <ul class="social">
+            <li> <a href=""><img src="img/w-facebook.png" alt=""></a></li>
+            <li> <a href=""><img src="img/w-twitter.png" alt=""></a></li>
+            <li> <a href=""><img src="img/w-instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Reviews</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        });
+    </script>
+</body>
+
+</html>
